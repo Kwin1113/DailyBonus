@@ -1,0 +1,8 @@
+server:
+  port: 8081
+
+dubbo:
+  application:
+    name: dailybonus-consumer
+  registry:
+    address: zookeeper://kwin.aly:2181

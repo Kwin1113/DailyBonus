@@ -1,0 +1,21 @@
+dubbo:
+  application:
+    name: dailybonus-provider
+  registry:
+    address: kwin.aly
+    port: 2181
+    protocol: zookeeper
+    register: true
+  scan:
+    base-packages: xyz.kwin.dailybonus.service
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://kwin.aly:3306/dailybonus
+    username: root
+    password: 123456
+  redis:
+    host: kwin.aly
+    port: 6379
+    password:
